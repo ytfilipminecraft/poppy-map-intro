@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Úvod do mapy</title>
+
+<style>
+
+/* FONT */
+@font-face {
+    font-family: 'KG Red Hands';
+    src: url('./KGRedHands.ttf');
+}
+
+/* BODY */
+body{
+    margin:0;
+    height:100vh;
+    background:#8ed6ff;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/* CONTAINER */
+.box{
+    width:85%;
+    max-width:1000px;
+    max-height:80vh;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(8px);
+    border-radius:25px;
+    padding:30px;
+    overflow-y:auto;
+    z-index:2;
+}
+
+/* NADPIS */
+h1{
+    font-family:'KG Red Hands', sans-serif;
+    font-size:80px;
+    color:white;
+    margin-top:0;
+    margin-bottom:25px;
+    text-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* TEXT */
+p{
+    color:white;
+    font-size:26px;
+    font-weight:700;
+    line-height:1.8;
+    text-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* SCROLLBAR */
+.box::-webkit-scrollbar{
+    width:10px;
+}
+
+.box::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius:20px;
+}
+
+/* MINECRAFT HLAVA */
+.mc-head{
+    position:fixed;
+    top:20px;
+    right:20px;
+
+    width:150px;
+    height:150px;
+
+    opacity:0.35;
+    border-radius:20px;
+
+    pointer-events:none;
+
+    filter:drop-shadow(0 0 15px rgba(255,255,255,0.4));
+}
+
+/* MOBILE */
+@media (max-width:700px){
+
+    h1{
+        font-size:48px;
+    }
+
+    p{
+        font-size:20px;
+    }
+
+    .mc-head{
+        width:100px;
+        height:100px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Minecraft hlava -->
+<img class="mc-head"
+src="https://mc-heads.net/avatar/Chlr1emy_/180"
+alt="Minecraft Head">
+
+<div class="box">
+
+<h1>Úvod do mapy</h1>
+
+<p>
+Příběh tvé mapy začíná v temné, opuštěné továrně Playtime Co., kam přicházíš jako bývalý zaměstnanec odhalit pravdu o zmizelých kolezích. Hned na začátku získáváš v recepci modrou GrabPack ruku, s jejíž pomocí se dostáváš hlouběji do útrob komplexu.
+
+<br><br>
+
+Cesta tě zavede do hlavní haly, kde poprvé spatříš obří, děsivou hračku Huggy Wuggyho. Aby ses posunula dál, musíš v napájecím puzzle vyřešit elektřinu a získat druhou, červenou ruku.
+
+<br><br>
+
+S oběma rukama aktivuješ velká tovární vrata a proplížíš se stísněnou ventilační šachtou, kde slyšíš podivné zvuky. Následně se ocitáš v samotném srdci výroby, kde musíš v temnotě vyřešit další složitý elektrický puzzle.
+
+<br><br>
+
+Poté úspěšně spustíš výrobní linku „Make-A-Friend“, na které projíždějí mašinami části hračky Catbee od nevybarvených až po finální model.
+
+<br><br>
+
+Jakmile si hotovou hračku vyzvedneš a položíš ji na skener u dveří, abys utekla, Huggy Wuggy náhle ožije a začne tě pronásledovat.
+
+<br><br>
+
+V napínavé honičce na život a na smrt prcháš skrz ventilace a pásy, dokud na Huggyho neshodíš těžkou krabici, která ho shodí do hlubin továrny.
+
+<br><br>
+
+Na úplném konci nacházíš tajemné dveře s červeným mákem, kde v malé místnosti objevuješ samotnou panenku Poppy, čímž celá kapitola končí.
+</p>
+
+</div>
+
+</body>
+</html>
